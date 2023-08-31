@@ -7,9 +7,16 @@
     "github": "https://www.github.com/pixelkind"
   },
   {
-    "file": "experiments/staticGenerativeArt.js",
+    "file": "experiments/generativeArt.js",
     "name": "Static Generative Art",
     "description": "First attempt to create art.",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/staticGenerativeArt.js",
+    "name": "Static Generative Art 2",
+    "description": "Second attempt to create art.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   }
