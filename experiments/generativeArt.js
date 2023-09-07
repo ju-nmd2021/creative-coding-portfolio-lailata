@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
   push();
-  translate(width / 2, height / 2);
+  translate(width / 2.5, height / 2.5);
   rectMode(CENTER);
   fill(random(255), random(255), random(255));
   rect(random(10, 200), random(1, 100), random(5, 90), random(2, 75));

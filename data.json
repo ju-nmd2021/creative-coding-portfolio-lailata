@@ -19,5 +19,12 @@
     "description": "Second attempt to create art.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowField.js",
+    "name": "Flow Field",
+    "description": "Created a Flow Field",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
   }
 ]
