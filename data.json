@@ -1,12 +1,5 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
-    "github": "https://www.github.com/pixelkind"
-  },
-  {
     "file": "experiments/generativeArt.js",
     "name": "Static Generative Art",
     "description": "First attempt to create art.",
@@ -24,6 +17,20 @@
     "file": "experiments/flowField.js",
     "name": "Flow Field",
     "description": "Created a Flow Field",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowField2.js",
+    "name": "Flow Field 2",
+    "description": "Created a Flow Field",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowField3.js",
+    "name": "Flow Field 3",
+    "description": "Variation of Flow Field",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   }
