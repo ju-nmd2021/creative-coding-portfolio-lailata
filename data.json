@@ -33,5 +33,12 @@
     "description": "Variation of Flow Field",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClick.js",
+    "name": "On Click Flow Fields",
+    "description": "Create new Flow Fields everytime and wherever you click",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
   }
 ]

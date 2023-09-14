@@ -9,12 +9,12 @@ let green1;
 let green2;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(innerWidth, innerHeight);
   background(30);
   noiseDetail(1);
   angleMode(DEGREES);
 
-  let density = 60;
+  let density = 90;
   let space = width / density;
 
   for (var x = 0; x < width; x += space) {
@@ -54,21 +54,15 @@ function draw() {
 
     points[i].add(createVector(cos(angle), sin(angle)));
 
-    let sizeEllipse = random(100);
+    let sizeEllipse = random(300);
     if (dist(width / 2, height / 2, points[i].x, points[i].y) < sizeEllipse) {
       ellipse(points[i].x, points[i].y, 1);
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+function mousePressed() {
+  ellipse(mouseX, mouseY, 50, 50);
+  // prevent default
+  return false;
+}
