@@ -36,8 +36,15 @@
   },
   {
     "file": "experiments/flowFieldOnClick.js",
-    "name": "On Click Flow Fields",
-    "description": "Create new Flow Fields everytime and wherever you click",
+    "name": "On Click Flow Fields with Sound",
+    "description": "Create new Flow Fields everytime and wherever you click and enjoy the sound",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClick2.js",
+    "name": "On Click Flow Fields with Sound Variation",
+    "description": "Create new Flow Fields everytime and wherever you click and enjoy the sound",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   }

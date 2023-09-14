@@ -94,6 +94,11 @@ function draw() {
 
   if (mouseIsPressed === true) {
     generateFlowField(mouseX, mouseY);
+    const synth = new Tone.Synth();
+
+    const feedbackDelay = new Tone.FeedbackDelay("16n", 0.9);
+    synth.connect(feedbackDelay);
+    feedbackDelay.toDestination();
   }
   // for (let flowField of flowFields) {
   //   flowField.draw();

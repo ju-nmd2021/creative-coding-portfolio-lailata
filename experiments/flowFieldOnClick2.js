@@ -8,14 +8,30 @@ let blue2;
 let green1;
 let green2;
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(30);
-  noiseDetail(1);
-  angleMode(DEGREES);
+function soundOne() {
+  const synth = new Tone.Synth();
 
-  let density = 560;
+  const feedbackDelay = new Tone.FeedbackDelay("8n", 0.6);
+  synth.connect(feedbackDelay);
+  feedbackDelay.toDestination();
+
+  synth.triggerAttackRelease("C3", "2n");
+}
+
+function soundTwo() {
+  const fmSynth = new Tone.FMSynth();
+  const delay = new Tone.FeedbackDelay("4n", 0.7);
+  fmSynth.connect(delay);
+  delay.toDestination();
+
+  fmSynth.triggerAttackRelease("C1", "4n");
+}
+
+function flowField() {
+  let density = 90;
   let space = width / density;
+
+  points == null;
 
   for (var x = 0; x < width; x += space) {
     for (var y = 0; y < height; y += space) {
@@ -32,6 +48,15 @@ function setup() {
   blue2 = random(255);
 
   angleControl = random(0.002, 0.05);
+}
+
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  background(30);
+  noiseDetail(1);
+  angleMode(DEGREES);
+
+  flowField();
 }
 
 function draw() {
@@ -54,21 +79,14 @@ function draw() {
 
     points[i].add(createVector(cos(angle), sin(angle)));
 
-    let sizeEllipse = random(300);
-    if (dist(width / 2, height / 2, points[i].x, points[i].y) < sizeEllipse) {
-      ellipse(points[i].x, points[i].y, 1);
-    }
+    ellipse(points[i].x, points[i].y, 1);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+function mousePressed() {
+  // ellipse(mouseX, mouseY, 50, 50);
+  flowField();
+  soundTwo();
+  // prevent default
+  return false;
+}
