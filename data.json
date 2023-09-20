@@ -9,28 +9,28 @@
   {
     "file": "experiments/staticGenerativeArt.js",
     "name": "Static Generative Art 2",
-    "description": "Second attempt to create art.",
+    "description": "Second attempt to create art. Supposed to transmit some kind of firework vibes.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
     "file": "experiments/flowField.js",
     "name": "Flow Field",
-    "description": "Created a Flow Field",
+    "description": "Created a Flow Field flowing in one direction",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
     "file": "experiments/flowField2.js",
     "name": "Flow Field 2",
-    "description": "Created a Flow Field",
+    "description": "Created a Flow Field that is really condensed in the beginning but then slowly decreases",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
     "file": "experiments/flowField3.js",
     "name": "Flow Field 3",
-    "description": "Variation of Flow Field",
+    "description": "Variation of a Flow Field that grows within an ellipse",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
@@ -43,7 +43,7 @@
   },
   {
     "file": "experiments/flowFieldOnClick2.js",
-    "name": "On Click Flow Fields with Sound Variation",
+    "name": "On Click Flow Fields over the whole page with Sound Variation",
     "description": "Create new Flow Fields everytime and wherever you click and enjoy the sound",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
