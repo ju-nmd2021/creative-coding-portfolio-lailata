@@ -1,6 +1,8 @@
 let points = [];
 let angleControl;
 
+let fields = [];
+
 let red1;
 let red2;
 let blue1;
@@ -32,7 +34,7 @@ function flowField() {
   let distance = width / density;
 
   points.length = 0;
-  background(30);
+  // background(30);
 
   for (var mouseX = 0; mouseX < width; mouseX += distance) {
     for (var mouseY = 0; mouseY < height; mouseY += distance) {
@@ -49,6 +51,8 @@ function flowField() {
   blue2 = random(255);
 
   angleControl = random(0.002, 0.05);
+
+  return points;
 }
 
 function setup() {
@@ -64,36 +68,47 @@ function draw() {
 
   //Mapping the colours and angle taken from Colourful Coding: How to make a flow field in p5.js | Coding Project #9
   //https://www.youtube.com/watch?v=1-QXuR-XX_s&list=PLwUlLzAS3RYow0T9ZXB0IomwB-DyBRTfm&index=11
-  for (var i = 0; i < points.length; i++) {
-    let red = map(points[i].x, 0, width, red1, red2);
-    let green = map(points[i].y, 0, height, green1, green2);
-    let blue = map(points[i].x, 0, width, blue1, blue2);
 
-    fill(red, green, blue);
+  for (let k = 0; k < fields.length; k++) {
+    let points = fields[k].points;
+    for (var i = 0; i < points.length; i++) {
+      let red = map(points[i].x, 0, width, red1, red2);
+      let green = map(points[i].y, 0, height, green1, green2);
+      let blue = map(points[i].x, 0, width, blue1, blue2);
 
-    let angle = map(
-      noise(points[i].x * angleControl, points[i].y * angleControl),
-      0,
-      1,
-      0,
-      720
-    );
+      fill(red, green, blue);
 
-    points[i].add(createVector(cos(angle), sin(angle)));
+      let angle = map(
+        noise(points[i].x * angleControl, points[i].y * angleControl),
+        0,
+        1,
+        0,
+        720
+      );
 
-    let sizeEllipse = random(150);
-    if (dist(mouseX, mouseY, points[i].x, points[i].y) < sizeEllipse) {
-      ellipse(points[i].x, points[i].y, 1);
+      points[i].add(createVector(cos(angle), sin(angle)));
+
+      let sizeEllipse = random(150);
+      if (
+        dist(fields[k].x, fields[k].y, points[i].x, points[i].y) < sizeEllipse
+      ) {
+        ellipse(points[i].x, points[i].y, 1);
+      }
     }
   }
 }
 
 function mousePressed() {
-  // ellipse(mouseX, mouseY, 50, 50);
   noiseSeed(millis());
   flowField();
+  fields = [];
+  // ellipse(mouseX, mouseY, 50, 50);
+  let obj = {
+    x: mouseX,
+    y: mouseY,
+    points: flowField(),
+  };
+  fields.push(obj);
   soundOne();
   soundTwo();
-  // prevent default
-  return false;
 }

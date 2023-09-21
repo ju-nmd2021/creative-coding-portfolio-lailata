@@ -9,8 +9,8 @@ function setup() {
     particles.push(createVector(random(width), random(height)));
   }
   background(34, 39, 46);
-  stroke(0, 255, 255);
-  strokeWeight(1.5);
+  stroke(255, 0, 0);
+  strokeWeight(4.5);
   angleMode(DEGREES);
 }
 
@@ -25,7 +25,7 @@ function draw() {
 
     let pointValue = (position.x * noiseScale, position.y * noiseScale);
     let angle = 360 * pointValue;
-    position.x += cos(angle);
+    position.x -= cos(angle);
     position.y += sin(angle);
 
     //Checking if on screen taken from Barney Codes | Easy Perlin Noise Flow Fields, line 34 to 43

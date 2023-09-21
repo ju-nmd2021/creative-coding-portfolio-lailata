@@ -19,23 +19,22 @@ function soundOne() {
 }
 
 function soundTwo() {
-  const fmSynth = new Tone.FMSynth();
-  const delay = new Tone.FeedbackDelay("4n", 0.5);
-  fmSynth.connect(delay);
+  const polySynth = new Tone.PolySynth();
+  const delay = new Tone.FeedbackDelay("8n", 0.8);
+  polySynth.connect(delay);
   delay.toDestination();
 
-  fmSynth.triggerAttackRelease("C1", "4n");
+  polySynth.triggerAttackRelease(["D2","A3", "F4"], "2n");
 }
 
 function flowField() {
   let density = 90;
-  let space = width / density;
+  let distance = width / density;
 
-  points.length = 0;
-  background(30);
+  points == null;
 
-  for (var x = 0; x < width; x += space) {
-    for (var y = 0; y < height; y += space) {
+  for (var x = 0; x < width; x += distance) {
+    for (var y = 0; y < height; y += distance) {
       let p = createVector(x + random(-20, 10), y + random(-30, +5));
       points.push(p);
     }
@@ -53,10 +52,11 @@ function flowField() {
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
+  background(255);
   noiseDetail(1);
   angleMode(DEGREES);
-  background(30);
-  // flowField();
+
+  flowField();
 }
 
 function draw() {
@@ -79,18 +79,13 @@ function draw() {
 
     points[i].add(createVector(cos(angle), sin(angle)));
 
-    let sizeEllipse = random(150);
-    if (dist(width / 2, height / 2, points[i].x, points[i].y) < sizeEllipse) {
-      ellipse(points[i].x, points[i].y, 1);
-    }
+    ellipse(points[i].x, points[i].y, 1);
   }
 }
 
 function mousePressed() {
   // ellipse(mouseX, mouseY, 50, 50);
-  noiseSeed(millis());
   flowField();
-  soundOne();
   soundTwo();
   // prevent default
   return false;

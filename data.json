@@ -7,6 +7,13 @@
     "github": "https://www.github.com/lailata"
   },
   {
+    "file": "experiments/generativeArtVariation.js",
+    "name": "Static Generative Art",
+    "description": "First attempt to create art.",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
     "file": "experiments/staticGenerativeArt.js",
     "name": "Static Generative Art 2",
     "description": "Second attempt to create art. Supposed to transmit some kind of firework vibes.",
@@ -16,35 +23,77 @@
   {
     "file": "experiments/flowField.js",
     "name": "Flow Field",
-    "description": "Created a Flow Field flowing in one direction",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
-    "github": "https://www.github.com/lailata"
-  },
-  {
-    "file": "experiments/flowField2.js",
-    "name": "Flow Field 2",
     "description": "Created a Flow Field that is really condensed in the beginning but then slowly decreases",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
-    "file": "experiments/flowField3.js",
-    "name": "Flow Field 3",
+    "file": "experiments/flowFieldReversed.js",
+    "name": "Flow Field Reversed",
+    "description": "Created a Flow Field that is a variation of the one before",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowField2.js",
+    "name": "Flowing right",
+    "description": "Created a Flow Field flowing in one direction",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowField2VariationLava.js",
+    "name": "Lava Flow",
+    "description": "Variation of Flowing right, trying to transmit lava vibes",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldGrowing.js",
+    "name": "Growing Flow Field",
     "description": "Variation of a Flow Field that grows within an ellipse",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
-    "file": "experiments/flowFieldOnClick.js",
-    "name": "On Click Flow Fields with Sound",
-    "description": "Create new Flow Fields everytime and wherever you click and enjoy the sound",
+    "file": "experiments/flowFieldGrowingSound.js",
+    "name": "Growing Flow Field with Sound",
+    "description": "Variation of a Flow Field that grows within an ellipse making sounds",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
-    "file": "experiments/flowFieldOnClick2.js",
-    "name": "On Click Flow Fields over the whole page with Sound Variation",
-    "description": "Create new Flow Fields everytime and wherever you click and enjoy the sound",
+    "file": "experiments/flowFieldOnClickEllipse.js",
+    "name": "Ellipse Flow Fields all over",
+    "description": "Click to create a Flow Field and enjoy the sound",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClickEllipseRenew.js",
+    "name": "Mysterious",
+    "description": "Wherever you click a new Flow Field emerges",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClickFollowMouse.js",
+    "name": "The painter | Flow Field",
+    "description": "Variation of the two previous Flow Fields",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClickDark.js",
+    "name": "Dark",
+    "description": "Create new Flow Fields filling the whole page everytime and wherever you click and enjoy the sound",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/lailata"
+  },
+  {
+    "file": "experiments/flowFieldOnClickLight.js",
+    "name": "Light",
+    "description": "Create new Flow Fields filling the whole page everytime and wherever you click and enjoy the sound",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   }
