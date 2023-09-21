@@ -73,3 +73,7 @@ function draw() {
     }
   }
 }
+
+/* - window.addEventlistener("click"()=>) dann sollte Ton spielen möglich sein
+   - alle const und anderen Variablen, am besten ins Set Up
+   - Ton spielen lassen dann in draw, je nach dem auch in for loop */
