@@ -85,14 +85,14 @@
   },
   {
     "file": "experiments/flowFieldOnClickDark.js",
-    "name": "Dark",
+    "name": "Dark Mode",
     "description": "Create new Flow Fields filling the whole page everytime and wherever you click and enjoy the sound",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
   },
   {
     "file": "experiments/flowFieldOnClickLight.js",
-    "name": "Light",
+    "name": "Light Mode",
     "description": "Create new Flow Fields filling the whole page everytime and wherever you click and enjoy the sound",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/lailata"
